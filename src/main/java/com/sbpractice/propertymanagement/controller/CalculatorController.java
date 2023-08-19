@@ -1,5 +1,8 @@
 package com.sbpractice.propertymanagement.controller;
 
+import com.sbpractice.propertymanagement.dto.CalculatorDTO;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -13,12 +16,21 @@ public class CalculatorController {
 
     // Another way - Map the values of url to java variables by Path Variable Method
     @GetMapping("/subtract/{num1}/{num2}")
-    public Double subtract(@PathVariable("num1") Double num1,@PathVariable("num2") Double num2) {
+    public Double subtract(@PathVariable("num1") Double num1, @PathVariable("num2") Double num2) {
         Double result = null;
         result = (num1 > num2)
                 ? num1 - num2
                 : num2 - num1;
 
         return result;
+    }
+
+    // Using POST instead of GET to hide data in the url
+    // Important for sensitive data
+    @PostMapping("/multiply")
+    public ResponseEntity<Double> multiply(@RequestBody CalculatorDTO calculatorDTO) {
+        Double result = null;
+        result = calculatorDTO.getNum1() * calculatorDTO.getNum2() * calculatorDTO.getNum3() * calculatorDTO.getNum4();
+        return new ResponseEntity<>(result, HttpStatus.CREATED);
     }
 }

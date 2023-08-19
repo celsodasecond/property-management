@@ -8,7 +8,8 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 
 - Use Lombok instead of 'Getters & Setters' in the DTO/Model
 - @RequestMapping  is used to map web requests onto specific handler classes and/or handler methods
-- 
+- @RequestBody must match the fields in the Model/DTO
+- @ResponseEntity enables to send data from client to server (DataBody & Response Code)
 
 ## Want to get the boilerplate ?
 
