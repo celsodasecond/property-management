@@ -7,6 +7,8 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 ## What did I learn ?
 
 - Use Lombok instead of 'Getters & Setters' in the DTO/Model
+- @RequestMapping  is used to map web requests onto specific handler classes and/or handler methods
+- 
 
 ## Want to get the boilerplate ?
 
