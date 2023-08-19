@@ -4,9 +4,9 @@
 
 The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spring Data JPA, and H2 Database.
 
-## What did I learned ?
+## What did I learn ?
 
-- 
+- Use Lombok instead of 'Getters & Setters' in the DTO/Model
 
 ## Want to get the boilerplate ?
 
