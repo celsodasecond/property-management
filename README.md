@@ -17,11 +17,16 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 
 ## Development
 
-#### Application Lifecycle
+### API Endpoint
+
+#### Calculator
+
+- **@GET: /api/v1/calculator/add** - Adds the value of two numbers.
+- **@GET: /api/v1/calculator/subtract** - Subtracts the value of two numbers.
+- **@POST: /api/v1/calculator/multiply** - Multiplies numbers based on the field and annonation stated on the CalculatorDTO.
 
 
-#### Dependencies
-
+### Dependencies
 - Maven
 - Spring Boot 2.7.14
 - Java 17
@@ -30,7 +35,7 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 - Spring Data JPA
 - H2 Database
 
-#### Clone Project
+### Clone Project
 
 ```shell
 https://github.com/celsodasecond/property-management.git
