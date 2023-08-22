@@ -2,12 +2,12 @@
 
 ## What is this Project ?
 
-The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spring Data JPA, and H2 Database. 
+The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spring Data JPA, and H2 Database.
 
 ## What did I learn ?
 
 - Use Lombok instead of 'Getters & Setters' in the DTO/Model
-- @RequestMapping  is used to map web requests onto specific handler classes and/or handler methods
+- @RequestMapping is used to map web requests onto specific handler classes and/or handler methods
 - @RequestBody must match the fields in the Model/DTO
 - @ResponseEntity enables to send data from client to server (DataBody & Response Code)
 - @Autowired is used to inject Implementations from Interfaces automatically (uses Dependecy Injection)
@@ -26,10 +26,16 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 
 - **@GET: /api/v1/calculator/add** - Adds the value of two numbers.
 - **@GET: /api/v1/calculator/subtract** - Subtracts the value of two numbers.
-- **@POST: /api/v1/calculator/multiply** - Multiplies numbers based on the field and annonation stated on the CalculatorDTO.
+- **@POST: /api/v1/calculator/multiply** - Multiplies numbers based on the field and annonation stated on the
+  CalculatorDTO.
 
+#### Properties
+
+- **@POST: /api/v1/properties/save** - Saves property with required title, and ownerEmail. Optional: description,
+  ownerName, price, and address. ID Autoincrements.
 
 ### Dependencies
+
 - Maven
 - Spring Boot 2.7.14
 - Java 17
