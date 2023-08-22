@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PropertyDTO {
-
+    private Long id;
     private String title;
     private String description;
     private String ownerName;
@@ -17,7 +17,8 @@ public class PropertyDTO {
     @Override
     public String toString() {
         return "PropertyDTO{" +
-                "title='" + title + '\'' +
+                "id=" + id +
+                ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", ownerName='" + ownerName + '\'' +
                 ", ownerEmail='" + ownerEmail + '\'' +
