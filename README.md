@@ -11,6 +11,7 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 - @RequestBody must match the fields in the Model/DTO
 - @ResponseEntity enables to send data from client to server (DataBody & Response Code)
 - @Autowired is used to inject Implementations from Interfaces automatically (uses Dependecy Injection)
+- Entity is used to hold the data in the Repository layer.
 
 ## Want to get the boilerplate ?
 
