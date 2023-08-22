@@ -2,7 +2,7 @@
 
 ## What is this Project ?
 
-The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spring Data JPA, and H2 Database.
+The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spring Data JPA, and H2 Database. 
 
 ## What did I learn ?
 
@@ -12,6 +12,7 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 - @ResponseEntity enables to send data from client to server (DataBody & Response Code)
 - @Autowired is used to inject Implementations from Interfaces automatically (uses Dependecy Injection)
 - Entity is used to hold the data in the Repository layer.
+- Reviewed design patterns such as **Dependency Injection** and **Adaptor Pattern**
 
 ## Want to get the boilerplate ?
 
