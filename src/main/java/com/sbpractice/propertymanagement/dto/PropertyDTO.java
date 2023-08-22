@@ -14,5 +14,17 @@ public class PropertyDTO {
     private Double price;
     private String address;
 
-//    We can use Lombok instead of Getters and Setters.
+    @Override
+    public String toString() {
+        return "PropertyDTO{" +
+                "title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", ownerName='" + ownerName + '\'' +
+                ", ownerEmail='" + ownerEmail + '\'' +
+                ", price=" + price +
+                ", address='" + address + '\'' +
+                '}';
+    }
+
+    //    We can use Lombok instead of Getters and Setters.
 }
