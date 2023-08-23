@@ -37,6 +37,7 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 - **@PUT: /api/v1/properties/update/{propertyId}** - Full update a specific row given the PropertyDTO and propertyId (Just for the sake of using and reviewing @PUT method).
 - **@PATCH: /api/v1/properties/update/description/{propertyId}** Partial update a specific row given the specific field
   to be updated and propertyId (Just for the sake of using and reviewing @PATCH method).
+- **@DELETE: /api/v1/properties/delete/{propertyId}** - Delete a property by Id.
 
 ### Dependencies
 
