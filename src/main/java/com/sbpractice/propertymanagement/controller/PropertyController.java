@@ -40,4 +40,11 @@ public class PropertyController {
 
         return new ResponseEntity<>(propertyDTO, HttpStatus.CREATED);
     }
+
+    @PatchMapping("/update/description/{propertyId}")
+    public ResponseEntity<PropertyDTO> updatePropertyDescription(@RequestBody PropertyDTO propertyDTO, @PathVariable Long propertyId) {
+        propertyDTO = propertyService.updatePropertyDescription(propertyDTO, propertyId);
+
+        return new ResponseEntity<>(propertyDTO, HttpStatus.CREATED);
+    }
 }

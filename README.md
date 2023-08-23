@@ -34,7 +34,9 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 - **@POST: /api/v1/properties/save** - Saves property with required title, and ownerEmail. Optional: description,
   ownerName, price, and address. ID Autoincrement.
 - **@GET: /api/v1/properties** - Returns all property data in the database.
-- **@PUT: api/v1/properties/update/{propertyId}** - Full update a specific row given the PropertyDTO and propertyId.
+- **@PUT: /api/v1/properties/update/{propertyId}** - Full update a specific row given the PropertyDTO and propertyId (Just for the sake of using and reviewing @PUT method).
+- **@PATCH: /api/v1/properties/update/description/{propertyId}** Partial update a specific row given the specific field
+  to be updated and propertyId (Just for the sake of using and reviewing @PATCH method).
 
 ### Dependencies
 
