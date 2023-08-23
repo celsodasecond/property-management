@@ -2,7 +2,11 @@ package com.sbpractice.propertymanagement.service;
 
 import com.sbpractice.propertymanagement.dto.PropertyDTO;
 
+import java.util.List;
+
 public interface PropertyService {
 
-    public PropertyDTO saveProperty(PropertyDTO propertyDTO);
+    PropertyDTO saveProperty(PropertyDTO propertyDTO);
+
+    List<PropertyDTO> getAllProperty();
 }

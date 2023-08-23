@@ -33,6 +33,7 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 
 - **@POST: /api/v1/properties/save** - Saves property with required title, and ownerEmail. Optional: description,
   ownerName, price, and address. ID Autoincrements.
+- **@GET: /api/v1/properties** - Returns all property data in the database.
 
 ### Dependencies
 
