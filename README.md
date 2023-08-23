@@ -26,14 +26,15 @@ The concept behind this app is to study Spring Boot with Spring Web, Lombok, Spr
 
 - **@GET: /api/v1/calculator/add** - Adds the value of two numbers.
 - **@GET: /api/v1/calculator/subtract** - Subtracts the value of two numbers.
-- **@POST: /api/v1/calculator/multiply** - Multiplies numbers based on the field and annonation stated on the
+- **@POST: /api/v1/calculator/multiply** - Multiplies numbers based on the field and annotation stated on the
   CalculatorDTO.
 
 #### Properties
 
 - **@POST: /api/v1/properties/save** - Saves property with required title, and ownerEmail. Optional: description,
-  ownerName, price, and address. ID Autoincrements.
+  ownerName, price, and address. ID Autoincrement.
 - **@GET: /api/v1/properties** - Returns all property data in the database.
+- **@PUT: api/v1/properties/update/{propertyId}** - Full update a specific row given the PropertyDTO and propertyId.
 
 ### Dependencies
 
